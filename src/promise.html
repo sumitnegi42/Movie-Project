@@ -1,0 +1,16 @@
+<script>
+   function paren(){
+      var a=10;
+
+      function inner(){
+        var b = 20;
+
+        var c = a + b;
+        console.log("i am from inner", c);
+      }
+     inner();
+      var d = a + b + c;
+      console.log("i am from paren");
+   }
+   paren();
+</script>
